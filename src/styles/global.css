@@ -398,18 +398,35 @@ a {
   overflow: hidden;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-lg);
+  position: relative;
+  background-color: #000;
 }
 @media (min-width: 768px) {
   .article-cover-container {
     aspect-ratio: 16 / 7; /* Cinematic landscape ratio on desktop */
   }
 }
+.article-cover-container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-image: var(--cover-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.5);
+  z-index: 1;
+  opacity: 0.75;
+}
 .article-cover-main {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain; /* Show the entire image without cropping */
+  position: relative;
+  z-index: 2;
 }
 .article-body {
   width: 100%;
