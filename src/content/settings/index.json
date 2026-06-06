@@ -1,0 +1,10 @@
+{
+  "siteName": "ДизайнСфера",
+  "siteDescription": "Информационный портал об интерьере, дизайне помещений, умном доме и декоре.",
+  "telegramBotToken": "",
+  "telegramChatId": "",
+  "sidebarBannerTitle": "Рассчитать смету ремонта",
+  "sidebarBannerText": "Получите точный расчет стоимости работ и материалов за 5 минут!",
+  "sidebarBannerLink": "/#contact",
+  "sidebarBannerButtonText": "Рассчитать смету"
+}
