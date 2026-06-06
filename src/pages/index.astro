@@ -305,7 +305,7 @@ const formatDate = (date: Date) => {
       posts.forEach(post => {
         const postCategory = post.getAttribute('data-post-category');
         if (category === 'all' || postCategory === category) {
-          (post as HTMLElement).style.display = 'flex';
+          (post as HTMLElement).style.display = '';
         } else {
           (post as HTMLElement).style.display = 'none';
         }
