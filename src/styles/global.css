@@ -298,7 +298,8 @@ a {
 }
 @media (min-width: 768px) {
   .card-image-link {
-    height: 100%; /* Stretch to fill full height of the grid row on desktop */
+    height: auto; /* Let the grid stretch it naturally on desktop */
+    min-height: 240px; /* Ensure minimum height matches the card's min-height */
   }
 }
 .card-image-main {
